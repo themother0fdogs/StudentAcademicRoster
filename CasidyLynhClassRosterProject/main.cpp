@@ -1,4 +1,4 @@
-// CasidyLynhClassRosterProject.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
@@ -18,20 +18,13 @@ int main()
 			"A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK",
 			"A3,Jack,Napoli,The_lawyer99yahoo.com,19,20,40,33,SOFTWARE",
 			"A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY",
-			"A5,Lynh,Casidy,lcasidy@wgu.edu,27, 20, 20, 20,SOFTWARE"
+			"A5,Myfirstname,Mylastname,myemail@gmail.com,27, 20, 20, 20,SOFTWARE"
 	};
 
 	Roster* classRoster = new Roster(numStudents);
 	for (int i = 0; i < numStudents; i++) {
 		classRoster->parseAndAdd(studentData[i]);
 	}
-
-	//Print out to the screen, via your application, the course title, the programming language used, your WGU student ID, and your name.
-	cout << "Scripting and Programming - Applications" << endl;
-	cout << "Language: C++" << endl;
-	cout << "Student ID: #001390025" << endl;
-	cout << "Name: Lynh Casidy" << endl;
-	cout << "-------------------------------------------------------------------------------" << endl;
 
 	cout << "Displaying all students: " << endl <<endl;
 	classRoster->printAll();
