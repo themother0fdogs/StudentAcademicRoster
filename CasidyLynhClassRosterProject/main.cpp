@@ -51,6 +51,10 @@ int main()
 	cout << "Removing A3:" << endl << endl;
 	classRoster->remove("A3");
 	cout << "-------------------------------------------------------------------------------" << endl;
+	
+	cout << "Displaying all students: " << endl <<endl;
+	classRoster->printAll();
+	cout << "-------------------------------------------------------------------------------" << endl;
 
 	cout << "Remove A3 again: " << endl << endl;
 	classRoster->remove("A3");
